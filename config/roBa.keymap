@@ -75,9 +75,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-    };
-
-     behaviors {
        encoder_msc_down_up: encoder_msc_down_up {
            compatible = "zmk,behavior-sensor-rotate";
            label = "ENCODER_MSC_DOWN_UP";
@@ -85,6 +82,7 @@
            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
            tap-ms = <20>;
        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
