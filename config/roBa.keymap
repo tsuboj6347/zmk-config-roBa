@@ -91,10 +91,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                       &kp T                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                       &kp G        &kp LS(LG(S))      &kp BACKSPACE  &kp H        &kp J  &kp K      &kp L    &kp SLASH
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                       &kp B        &kp BACKSPACE      &kp DELETE     &kp N        &kp M  &kp COMMA  &kp DOT  &kp UNDERSCORE
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LA(LANG5)  &lt 4 SPACE  &lt 3 ENTER        &lt 1 SPACE    &lt 2 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                   &kp T                                          &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))      &kp BACKSPACE  &kp H        &kp J  &kp K      &kp L    &kp SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp BACKSPACE      &kp DELETE     &kp N        &kp M  &kp COMMA  &kp DOT  &kp UNDERSCORE
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LANG5  &lt 4 SPACE  &lt 3 ENTER        &lt 1 SPACE    &lt 2 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -103,10 +103,10 @@
 
         Symbol {
             bindings = <
-&trans  &kp APOSTROPHE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH       &kp BACKSLASH      &kp PIPE
-&trans  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &trans     &trans        &kp BACKSPACE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none
-&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp TILDE  &kp PIPE      &kp DELETE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON   &kp COLON          &none
-&trans  &trans           &trans                &trans                 &trans     &trans        &trans         &trans                                                                          &none
+&trans  &kp APOSTROPHE   &kp LPAR           &kp RPAR  &trans                                  &kp LPAR          &kp RPAR           &kp SLASH       &kp BACKSLASH      &kp PIPE
+&trans  &kp DOLLAR       &kp PERCENT        &kp AMPS  &trans     &trans        &kp BACKSPACE  &kp LBRC          &kp RBRC           &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none
+&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp TILDE  &kp PIPE      &kp DELETE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON   &kp COLON          &none
+&trans  &trans           &trans             &trans    &trans     &trans        &trans         &trans                                                                  &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
