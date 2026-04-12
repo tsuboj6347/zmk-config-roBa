@@ -91,10 +91,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E        &kp R             &kp T                                                 &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D        &kp F             &kp G      &kp LS(LG(S))      &kp BACKSPACE           &kp H        &kp J  &kp K      &kp L    &kp KP_MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C        &kp V             &kp B      &kp BACKSPACE      &kp DELETE              &kp N        &kp M  &kp COMMA  &kp DOT  &kp UNDERSCORE
-&kp LCTRL         &kp LEFT_WIN  &kp LA(TAB)  &kp LS(CAPSLOCK)  &kp SPACE  &lt 3 ENTER        &lt_to_layer_0 1 SPACE  &lt 2 ENTER                             &kp DEL
+&kp Q      &kp W         &kp E         &kp R             &kp T                                          &kp Y             &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F             &kp G        &kp LS(LG(S))      &kp BACKSPACE  &kp H             &kp J  &kp K      &kp L    &kp KP_MINUS
+&kp Z      &kp X         &kp C         &kp V             &kp B        &kp BACKSPACE      &kp DELETE     &kp N             &kp M  &kp COMMA  &kp DOT  &kp UNDERSCORE
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LS(CAPSLOCK)  &lt 5 SPACE  &lt 3 ENTER        &lt 1 TAB      &lt 2 LEFT_SHIFT                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -103,10 +103,10 @@
 
         Symbol {
             bindings = <
-&none         &kp APOSTROPHE   &kp LPAR           &kp RPAR  &none                                   &kp LPAR          &kp RPAR           &kp SLASH       &kp BACKSLASH      &kp PIPE
-&none         &kp DOLLAR       &kp PERCENT        &kp AMPS  &none      &none         &kp BACKSPACE  &kp LBRC          &kp RBRC           &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none
-&kp QUESTION  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp TILDE  &kp PIPE      &kp DELETE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON   &kp COLON          &none
-&none         &none            &none              &none     &none      &none         &none          &none                                                                   &none
+&none         &kp APOSTROPHE   &kp LPAR           &kp RPAR  &none                        &kp LPAR          &kp RPAR           &kp SLASH       &kp BACKSLASH      &kp PIPE
+&none         &kp DOLLAR       &kp PERCENT        &kp AMPS  &none      &none      &none  &kp LBRC          &kp RBRC           &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none
+&kp QUESTION  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp TILDE  &none      &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON   &kp COLON          &none
+&none         &none            &none              &none     &none      &none      &none  &none                                                                   &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -115,10 +115,10 @@
 
         NUM {
             bindings = <
-&kp ASTERISK                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                  &none       &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS   &none          &kp BACKSPACE  &none       &kp F4  &kp F5  &kp F6  &kp F11
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp EQUAL      &kp DELETE     &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
-&none                       &kp KP_N0        &none            &none            &none       &none          &none          &none                               &kp F13
+&kp ASTERISK                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                          &none       &kp F7  &kp F8  &kp F9  &kp F10
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS   &none          &none  &none       &kp F4  &kp F5  &kp F6  &kp F11
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp EQUAL      &none  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
+&none                       &kp KP_N0        &none            &none            &none       &none          &none  &none                               &kp F13
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
