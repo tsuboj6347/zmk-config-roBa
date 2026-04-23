@@ -105,7 +105,7 @@
             bindings = <
 &none         &kp APOSTROPHE   &kp LPAR           &kp RPAR  &none                        &kp LPAR          &kp RPAR           &kp SLASH       &kp BACKSLASH      &kp PIPE
 &none         &kp DOLLAR       &kp PERCENT        &kp AMPS  &none      &none      &none  &kp LBRC          &kp RBRC           &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none
-&kp QUESTION  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp TILDE  &none      &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON   &kp COLON          &none
+&kp QUESTION  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp TILDE  &none      &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON   &kp COLON          &kp UNDERSCORE
 &none         &none            &none              &none     &none      &none      &none  &none                                                                   &none
             >;
 
