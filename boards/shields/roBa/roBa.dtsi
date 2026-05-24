@@ -116,9 +116,8 @@
 
 trackball_listener: trackball_listener {
     compatible = "zmk,input-listener";
-    status = "disabled";
-
-    require-prior-idle-ms = <200>;
+    device = <&trackball>;
+    status = "okay";
 
     input-processors = <
         &zip_temp_layer 4 1000
