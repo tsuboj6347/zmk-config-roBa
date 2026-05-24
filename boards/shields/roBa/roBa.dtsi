@@ -133,6 +133,8 @@ trackball_listener: trackball_listener {
     };
 };
 
+};
+
 &spi0 {
     status = "disabled";
 
