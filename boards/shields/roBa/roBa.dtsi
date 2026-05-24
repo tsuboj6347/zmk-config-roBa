@@ -138,12 +138,8 @@ automouse_listener: automouse_listener {
     device = <&trackball>;
 
     input-processors = <
-        &zip_temp_layer 4 1000
+        &zip_temp_layer 4 1000 200
     >;
-};
-
-&zip_temp_layer {
-    require-prior-idle-ms = <200>;
 };
 
 &spi0 {
