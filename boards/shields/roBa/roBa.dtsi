@@ -114,44 +114,23 @@
         triggers-per-rotation = <10>;
     };
 
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-
-        input-processors = <           
-            &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-        >;
-
-        scroller {
-            layers = <5>;
-            input-processors = <
-                &zip_xy_to_scroll_mapper
-                &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-                &zip_xy_scaler 2 1
-            >;
-        };
-    };
-};
-
-aml: aml {
-    compatible = "zmk,input-processor-temp-layer";
-
-    #input-processor-cells = <0>;
-
-    layers = <4>;
-    timeout-ms = <1000>;
-    require-prior-idle-ms = <200>;
-};
-
-automouse_listener: automouse_listener {
+trackball_listener: trackball_listener {
     compatible = "zmk,input-listener";
-    device = <&trackball>;
+    status = "disabled";
 
-    input-processors = <&aml>;
-};
+    input-processors = <
+        &zip_temp_layer 4 1000
+        &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+    >;
 
-&zip_temp_layer {
-    require-prior-idle-ms = <200>;
+    scroller {
+        layers = <5>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+            &zip_xy_scaler 2 1
+        >;
+    };
 };
 
 &spi0 {
