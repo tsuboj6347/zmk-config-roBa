@@ -117,7 +117,10 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+
+        input-processors = <
+            &zip_temp_layer 5 1000            
+            &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
         scroller {
             layers = <5>;
             input-processors = <
@@ -127,6 +130,10 @@
             >;
         };
     };
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
 };
 
 &spi0 {
