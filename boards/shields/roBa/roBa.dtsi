@@ -119,7 +119,7 @@
         status = "disabled";
 
         input-processors = <
-            &zip_temp_layer 5 1000            
+            &zip_temp_layer 4 1000            
             &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
         scroller {
             layers = <5>;
