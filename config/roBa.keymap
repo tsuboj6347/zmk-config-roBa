@@ -6,7 +6,7 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 5 700>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 700>; };
 
 &mt {
     flavor = "balanced";
