@@ -106,10 +106,10 @@
 
         Symbol {
             bindings = <
-&none         &kp APOSTROPHE   &kp LPAR           &kp RPAR  &none                        &kp LPAR          &kp RPAR           &kp SLASH       &kp BACKSLASH      &kp PIPE
-&none         &kp DOLLAR       &kp PERCENT        &kp AMPS  &none      &none      &none  &kp LBRC          &kp RBRC           &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none
-&kp QUESTION  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp TILDE  &none      &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON   &kp COLON          &none
-&none         &none            &none              &none     &none      &none      &none  &none                                                                   &none
+&none         &kp APOSTROPHE   &kp ASTERISK       &kp LEFT_PARENTHESIS  &none                        &kp ASTERISK          &kp LEFT_PARENTHESIS  &kp SLASH       &kp NON_US_BACKSLASH  &kp PIPE
+&none         &kp DOLLAR       &kp PERCENT        &kp AMPS              &none      &none      &none  &kp LS(LEFT_BRACKET)  &kp RBRC              &kp APOSTROPHE  &kp DOUBLE_QUOTES     &none
+&kp QUESTION  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp TILDE  &none      &none  &kp RIGHT_BRACKET     &kp BACKSLASH         &kp SEMICOLON   &kp APOSTROPHE        &none
+&none         &none            &none              &none                 &none      &none      &none  &none                                                                             &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -118,10 +118,10 @@
 
         NUM {
             bindings = <
-&kp ASTERISK  &kp N7        &kp N8        &kp N9                   &kp PLUS                                 &none       &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6             &kp MINUS          &none          &none  &none       &kp F4  &kp F5  &kp F6  &kp F11
-&kp PERCENT   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3             &kp PERIOD         &kp EQUAL      &none  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
-&kp COLON     &kp N0        &kp TILDE     &mt LEFT_SHIFT CAPSLOCK  &kp LC(SEMICOLON)  &none          &none  &none                               &kp F13
+&kp ASTERISK    &kp N7        &kp N8        &kp N9                     &kp COLON                                    &none       &kp F7  &kp F8  &kp F9  &kp F10
+&kp SLASH       &kp NUMBER_4  &kp N5        &kp NUMBER_6               &kp MINUS          &none              &none  &none       &kp F4  &kp F5  &kp F6  &kp F11
+&kp PERCENT     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3               &kp PERIOD         &kp LS(EQUAL)      &none  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
+&kp APOSTROPHE  &kp N0        &kp PLUS      &mt LEFT_SHIFT LANGUAGE_5  &kp LC(SEMICOLON)  &none              &none  &none                               &kp F13
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
